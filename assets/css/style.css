@@ -328,13 +328,14 @@ body {
 }
 
 .icon-wrapper {
-  width: 80px;
-  height: 80px;
+  max-width: 80px; /* Set a limit for container width */
+  margin: 0 auto; /* Optional: center align */
 }
 
 .icon-img {
-  width: 100%;
-  height: 100%;
+  width: 100%; /* Ensure the image scales with its container */
+  height: auto; /* Maintain the aspect ratio */
+  max-width: 100px; /* Optional: limit maximum size */
 }
 
 .font-medium {
@@ -360,11 +361,16 @@ body {
   .col-md-6 {
     margin-bottom: 15px;
   }
+
+  .feature-card {
+    justify-content: space-between;
+  }
 }
 
 @media (max-width: 576px) {
   .feature-card {
     padding: 15px;
+    justify-content: space-between;
   }
   .font-medium {
     font-size: 1rem;
