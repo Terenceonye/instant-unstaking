@@ -352,6 +352,10 @@ body {
   justify-content: center !important;
 }
 
+.feature-card > div:nth-of-type(2) > div:nth-of-type(2) {
+  text-align: left;
+}
+
 @media (max-width: 768px) {
   .col-md-6 {
     margin-bottom: 15px;
